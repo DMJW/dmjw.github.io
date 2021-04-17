@@ -1,0 +1,189 @@
+html {
+  align-items: center;
+  text-align: center;
+  scroll-behavior: smooth;
+  font-family: 'Nanum Myeongjo';
+  color: black;
+}
+
+body {
+  background: linear-gradient(270deg, pink, skyblue);
+  background-size: 400% 400%;
+  -webkit-animation: BGGrad 15s ease infinite;
+  -moz-animation: BGGrad 15s ease infinite;
+  animation: BGGrad 15s ease infinite;
+}
+
+@keyframes BGGrad {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes boxHoverAni {
+  0% {
+    box-shadow: 0 0 25px orange;
+  }
+
+  25% {
+    box-shadow: 0 0 40px grey;
+  }
+
+  50% {
+    box-shadow: 0 0 40px grey;
+  }
+
+  100% {
+    box-shadow: 0 0 25px orange;
+  }
+}
+
+@keyframes ttext {
+  0% {
+    font-family: 'Nanum Myeongjo';
+    color: black;
+  }
+
+  25% {
+    font-family: 'Sunflower';
+    color: red;
+  }
+
+  50% {
+    font-family: 'Gugi';
+    color: white;
+  }
+
+  100% {
+    font-family: 'Sirin Stencil';
+    color: black;
+  }
+}
+
+.ys-text {
+  font-family: 'Sirin Stencil';
+}
+
+.search-area:hover {
+  animation: boxHoverAni 3s ease infinite;
+}
+
+h1 {
+  font-size: 100px;
+  text-decoration: none;
+  font-family: 'Sirin Stencil';
+  /* animation: ttext 3s infinite; */
+}
+
+.search-area {
+  width: 100%;
+  background-color: rgb(225, 225, 225, 0.7);
+  border-radius: 100px;
+  box-shadow: 0 0 25px orange;
+  color: black;
+}
+
+.search-area input[type=text] {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  transition: 1.5s ease;
+  border: none;
+}
+
+.search-area input[type=text]:focus {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  width: 50%;
+  height: 30px;
+  transition: 1.5s ease;
+  border: none;
+}
+
+@keyframes rotatebtn {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  10% {
+    transform: rotateX(30deg) rotateY(0deg);
+  }
+
+  20% {
+    transform: rotateX(0deg) rotateY(20deg);
+  }
+
+  30% {
+    transform: rotateX(0deg) rotateY(30deg);
+  }
+
+  40% {
+    transform: rotateX(360deg) rotateY(0deg);
+  }
+
+  60% {
+    transform: rotateX(0deg) rotateY(-20deg);
+  }
+
+  70% {
+    transform: rotateX(0deg) rotateY(-25deg);
+  }
+
+  80% {
+    transform: rotateX(-360deg) rotateY(-20deg);
+  }
+
+  95% {
+    transform: rotateX(-10deg) rotateY(-10deg);
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+}
+
+.sbutton:hover {
+  box-shadow: 0 0 5px white;
+    background-color: rgb(31, 31, 31);
+    width: 50%;
+    transition: 0.3s;
+    animation: rotatebtn 15s ease infinite;
+}
+
+.sbutton {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 45%;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.s-result {
+  text-align: initial;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* .s-result div {
+  background: rgb(255,255,255, 0.3);
+} */
+
+.h-bm {
+  margin-bottom: 50px;
+}
+
+.r-top h1 {
+  font-size: 70px;
+}

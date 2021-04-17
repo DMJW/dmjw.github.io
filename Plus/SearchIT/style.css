@@ -1,0 +1,64 @@
+html {
+  text-align: center;
+  scroll-behavior: smooth;
+  font-family: 'Sunflower';
+  color: white;
+}
+
+body {
+  background-color: #F4CCCC;
+}
+
+.wf-logo {
+  box-shadow: 0 0 10px black;
+  width: 200px;
+}
+
+.wf-logo-s {
+  box-shadow: 0 0 5px black;
+  width: 100px;
+}
+
+.search-area {
+  width: 100%;
+  background-color: #F4CCCC;
+  border-radius: 100px;
+  box-shadow: 0 0 25px red;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.search-area input[type=text] {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  transition: 1.5s ease;
+  background-color: white;
+  border: 1px solid black;
+}
+
+
+.search-area input[type=text]:focus {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  width: 50%;
+  height: 30px;
+  transition: 1.5s ease;
+  border: none;
+}
+
+.s-result {
+  text-align: initial;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.search-btn {
+  background-color: black;
+  width: 100px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
